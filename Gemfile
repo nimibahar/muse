@@ -12,6 +12,8 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'font-awesome-sass'
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 

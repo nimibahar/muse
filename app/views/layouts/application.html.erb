@@ -8,6 +8,22 @@
 </head>
 <body>
 
+  <div class="header">
+    <div class="wrapper clearfix">
+      <div id="logo"><%= link_to "Muse", root_path %></div>
+      <div class="nav">
+        <% if user_signed_in? %>
+          <%= link_to current_user.name, edit_user_registration_path %>
+          <%= link_to "Add New Inspiration", new_post_path, class: "button" %>
+        <% else %>
+          <%= link_to "Sign In", new_user_session_path %>
+          <%= link_to "Sign Up", new_user_registration_path, class: "button" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
