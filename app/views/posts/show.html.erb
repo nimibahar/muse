@@ -1,4 +1,10 @@
 <h1><%= @post.title %></h1>
+<br>
+<hr>
+<br>
+
+<%= image_tag @post.image.url(:medium) %>
+
 <p><%= link_to simple_format(@post.link) %></p>
 <p><%= @post.description %></p>
 <p><%= @post.user.name %></p>
