@@ -1,6 +1,7 @@
 <h1><%= @post.title %></h1>
 <p><%= link_to simple_format(@post.link) %></p>
 <p><%= @post.description %></p>
+<p><%= @post.user.name %></p>
 
 <%= link_to "Home", root_path %>
 <%= link_to "Edit", edit_post_path(@post) %>
